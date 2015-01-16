@@ -9,6 +9,35 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
+    <style type="text/css">
+      @font-face {
+        font-family:"NEW_TETRIS";
+        src: url("fonts/NEW_TETRIS.ttf") /* TTF file for CSS3 browsers */
+      }
+
+      h1.tetris-header {
+        font-family:'NEW_TETRIS';
+        font-size: 95px;
+      }
+
+      button#startGameBtn {
+        padding: 15px 25px;
+        font-size: 17px;
+        background-color: #27ae60;
+        color: #FFF;
+        border: none;
+        -webkit-transition: 0.2s;
+      }
+
+      button#startGameBtn:hover{
+        background-color: #e74c3c;
+      }
+
+      button#startGameBtn:disabled{
+        background-color: #7f8c8d;
+      }
+    </style>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,7 +48,7 @@
   <body>
     <header>
       <div class="inner">
-        <h1>Tetris</h1>
+        <h1 class="tetris-header">Tetris</h1>
         <h2>Built with love by @kahlil29 and @valindo at an awesome internship programme at @vacationlabs</h2>
         <a href="https://github.com/vacationlabs/tetris" class="button"><small>View project on</small> GitHub</a>
       </div>
