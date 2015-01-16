@@ -715,10 +715,11 @@ function clear_lines(line){
 // var score =0;
 
 function restart(){
-	alert("restart has been called ");
 	for(var i=0; i<2; i++){
 		for(var j=0; j<cols;j++){
 			if(superimpose.temp_grid[i][j].state === 1){
+					runGame = false;
+					document.getElementById("startGameBtn").disabled = false;
 					superimpose.init_super();
 					superimpose.printSuper();
 			}
